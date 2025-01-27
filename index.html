@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>homework1</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,19 +17,30 @@
 
 <body>
     <header class="header center">
+        <div class="header__svg header__svg--1"></div>
+        <div class="header__svg header__svg--2"></div>
+        <div class="header__svg header__svg--3"></div>
+        <div class="header__svg header__svg--4"></div>
+        <div class="header__svg header__svg--5"></div>
+        <div class="header__svg header__svg--6"></div>
+        <div class="header__svg header__svg--7"></div>
+        <div class="header__svg header__svg--8"></div>
+        <div class="header__svg header__svg--9"></div>
+        <div class="header__svg header__svg--10"></div>
+
         <h1 class="header__title">Добро пожаловать <br>на мой сайт мини-игр</h1>
+
         <div class="header__content">
             <p class="header__text">
                 Тебе предстоит пройти несколько увлекательных игр. <br>Если готов, нажимай
                 <span class="header__text--bold">«Поехали!»</span> и <span class="header__text--bold">приступай</span>.
             </p>
         </div>
+        <div class="header__input-box"><a href="#aboutGames" class="header__input">Поехали!</a></div>
 
-        <a href="#aboutGames" class="header__input">Поехали!</a>
-        <title>homework1</title>
+
 
     </header>
-
     <div class="scroll" id="scroll">
         <div class="scroll__content" id="scrollContent">
             <p class="scroll__text">Викторина</p>
@@ -106,15 +117,23 @@
 
     </div>
 
+
     <section class="about-games center" id="aboutGames">
+
+
+        <div class="about-games__svg about-games__svg--1"></div>
+        <div class="about-games__svg about-games__svg--2"></div>
+        <div class="about-games__svg about-games__svg--3"></div>
+
+
         <h2 class="about-games__title">Об играх</h2>
         <p class="about-games__text">
             В моей коллекции представлено 6 игр на разные темы. <br>Игры несложные — в них может поиграть каждый.
             <br>Все игры доступны для пользования.
         </p>
         <div class="about-games__cards">
-            <article class="about-games__card">
-                <a href="#" class="about-games__link">
+            <article class="about-games__card" id="card-1">
+                <a href="#GuessNumber" class="about-games__link">
                     <img class="about-games__img" src="./img/Guess the number.jpeg" alt="Угадай число">
                     <div class="about-games__info">
                         <p class="about-games__number">Игра № 1</p>
@@ -123,8 +142,8 @@
                 </a>
             </article>
 
-            <article class="about-games__card">
-                <a href="#" class="about-games__link">
+            <article class="about-games__card" id="card-2">
+                <a href="#simpleArithmetic" class="about-games__link">
                     <img class="about-games__img" src="./img/simple arithmetic.jpeg" alt="Простая арифметика">
                     <div class="about-games__info">
                         <p class="about-games__number">Игра № 2</p>
@@ -133,8 +152,8 @@
                 </a>
             </article>
 
-            <article class="about-games__card">
-                <a href="#" class="about-games__link">
+            <article class="about-games__card" id="card-3">
+                <a href="#turnTextOver" class="about-games__link">
                     <img class="about-games__img" src="./img/turn the text over.jpeg" alt="Переверни текст">
                     <div class="about-games__info">
                         <p class="about-games__number">Игра № 3</p>
@@ -143,8 +162,8 @@
                 </a>
             </article>
 
-            <article class="about-games__card">
-                <a href="#" class="about-games__link">
+            <article class="about-games__card" id="card-4">
+                <a href="#rockPaperScissors" class="about-games__link">
                     <img class="about-games__img" src="./img/rock paper scissors.jpeg" alt="Камень, ножницы, бумага">
                     <div class="about-games__info">
                         <p class="about-games__number">Игра № 4</p>
@@ -153,9 +172,9 @@
                 </a>
             </article>
 
-            <article class="about-games__card">
-                <a href="#" class="about-games__link">
-                    <img class="about-games__img" src="./img/simple quiz.jpeg" alt="Простая викторина">
+            <article class="about-games__card" id="card-5">
+                <a href="#quiz" class="about-games__link">
+                    <img class="about-games__img" src="./img/quiz.jpeg" alt="Простая викторина">
                     <div class="about-games__info">
                         <p class="about-games__number">Игра № 5</p>
                         <h3 class="about-games__name">Простая викторина</h3>
@@ -163,8 +182,8 @@
                 </a>
             </article>
 
-            <article class="about-games__card">
-                <a href="#" class="about-games__link">
+            <article class="about-games__card" id="card-6">
+                <a href="#randomColorGenerator" class="about-games__link">
                     <img class="about-games__img" src="./img/Guess the number.jpeg" alt="Генератор случайных цветов">
                     <div class="about-games__info">
                         <p class="about-games__number">Игра № 6</p>
@@ -173,7 +192,86 @@
                 </a>
             </article>
         </div>
+
+
     </section>
+
+    <section class="mini-games center">
+
+        <div class="mini-games__svg mini-games__svg--1"></div>
+        <div class="mini-games__svg mini-games__svg--2"></div>
+        <div class="mini-games__svg mini-games__svg--3"></div>
+        <div class="mini-games__svg mini-games__svg--4"></div>
+
+        <h2 class="mini-games__title">Мини-игры</h2>
+        <div class="mini-games__box">
+
+
+
+
+            <article class="mini-games__card" id="GuessNumber">
+                <div class="mini-games__content">
+                    <h3 class="mini-games__name">Угадай число</h3>
+                    <p class="mini-games__description">Попробуй угадать случайное <br>число от 1 до 100.</p>
+                    <button class="mini-games__button">Играть!</button>
+                </div>
+                <img src="./img/Guess the number big.jpeg" alt="Игра 'Угадай число'">
+            </article>
+
+            <article class="mini-games__card" id="simpleArithmetic">
+                <div class="mini-games__content">
+                    <h3 class="mini-games__name">Простая арифметика</h3>
+                    <p class="mini-games__description">Попробуй решить простые арифметические задачи.</p>
+                    <button class="mini-games__button">Играть!</button>
+                </div>
+                <img src="./img/simple arithmetic big.jpeg" alt="Игра 'Простая арифметика'">
+            </article>
+
+
+
+            <article class="mini-games__card" id="turnTextOver">
+                <div class="mini-games__content">
+                    <h3 class="mini-games__name">Переверни текст</h3>
+                    <p class="mini-games__description">Попробуй ввести текст, который <br>будет перевернут.</p>
+                    <button class="mini-games__button">Играть!</button>
+                </div>
+                <img src="./img/turn the text over big.jpeg" alt="Игра 'Переверни текст'">
+            </article>
+
+            <article class="mini-games__card" id="quiz">
+                <div class="mini-games__content">
+                    <h3 class="mini-games__name">Викторина</h3>
+                    <p class="mini-games__description">Отвечай на вопросы викторины <br>с вариантами ответов.</p>
+                    <button class="mini-games__button">Играть!</button>
+                </div>
+                <img src="./img/quiz big.jpeg" alt="Игра 'Викторина'">
+            </article>
+
+            <article class="mini-games__card" id="rockPaperScissors">
+                <div class="mini-games__content">
+                    <h3 class="mini-games__name">Камень, <br>ножницы, <br>бумага</h3>
+                    <p class="mini-games__description">Сыграй в популярную игру <br>против компьютера.</p>
+                    <button class="mini-games__button">Играть!</button>
+                </div>
+                <img src="./img/rock paper scissors big.jpeg" alt="Игра 'Камень, ножницы, бумага'">
+            </article>
+
+
+            <article class="mini-games__card" id="randomColorGenerator">
+                <div class="mini-games__content">
+                    <h3 class="mini-games__name">Генератор <br>случайных <br>цветов</h3>
+                    <p class="mini-games__description">Игра, в которой при клике на кнопку фон страницы меняется на
+                        случайный.</p>
+                    <button class="mini-games__button">Играть!</button>
+                </div>
+                <img src="./img/random color generator big.jpeg" alt="Игра 'Генератор случайных цветов'">
+            </article>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__text">Все права защищены.</p>
+    </footer>
 
     <script src="./scripts/script.js"></script>
 </body>

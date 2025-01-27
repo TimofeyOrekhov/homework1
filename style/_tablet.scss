@@ -1,0 +1,101 @@
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 786px/2);
+        padding-right: calc(50% - 786px/2);
+    }
+
+    .header {
+        &__svg {
+            &--6 {
+                display: none;
+            }
+
+            &--7 {
+                display: none;
+            }
+
+            &--8 {
+                display: none;
+            }
+
+            &--9 {
+                display: none;
+            }
+        }
+    }
+
+    .about-games {
+        &__info {
+            padding: 12px;
+        }
+
+        &__name {
+            font-size: 30px;
+        }
+    }
+
+    .mini-games {
+        &__box {
+            flex-direction: column;
+        }
+
+        &__card {
+            flex-direction: column-reverse;
+            height: auto;
+
+            &__content,
+            &__img {
+                width: 100%;
+                height: 50%;
+
+            }
+
+
+
+        }
+
+
+    }
+
+    .mini-games__box>.mini-games__card:nth-child(2n) {
+        flex-direction: column-reverse;
+
+
+    }
+
+
+}
+
+@media(min-width:767px) and (max-width:833px) {
+    .center {
+        padding: 0 24px;
+    }
+
+    .header {
+
+        &__title {
+            text-align: center;
+        }
+
+        &__text {
+            text-align: center;
+        }
+
+        &__input-box {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__input {
+            margin-top: 36px;
+            width: 285px;
+            height: 55px;
+        }
+    }
+
+    .about-games {
+        &__title {
+            padding-top: 48x;
+        }
+    }
+}

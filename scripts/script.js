@@ -19,3 +19,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     scrollAnimation();
 });
+
+document.querySelectorAll('.about-games__card').forEach((card) => {
+    card.addEventListener('mouseenter', () => {
+        
+        card.classList.add('increased');
+
+        const relatedCardId = parseInt(card.id.split('-')[1], 10) + 3;
+        const relatedCard = document.getElementById(`card-${relatedCardId}`);
+
+        if (relatedCard) {
+
+            relatedCard.classList.add('decreased');
+        }
+    });
+
+    card.addEventListener('mouseleave', () => {
+
+        card.classList.remove('increased');
+
+        const relatedCardId = parseInt(card.id.split('-')[1], 10) + 3;
+        const relatedCard = document.getElementById(`card-${relatedCardId}`);
+
+        if (relatedCard) {
+            
+            relatedCard.classList.remove('decreased');
+        }
+    });
+});
