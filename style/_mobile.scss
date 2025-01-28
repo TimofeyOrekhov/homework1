@@ -2,4 +2,146 @@
     .center {
         padding: 0 16px;
     }
+
+
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 650px;
+
+        &__title {
+            padding-top: 148px;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 49px;
+            text-align: center;
+        }
+
+        &__text {
+            max-width: 335px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+
+            & br {
+                display: none;
+            }
+        }
+
+        &__input {
+            margin-top: 35px;
+            width: 285px;
+            height: 55px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        &__svg {
+            &--1 {
+                content: url(../img/svg/Star\ 14.svg);
+                left: 38px;
+                top: 97px;
+            }
+
+            &--2 {
+                content: url(../img/svg/Star\ 15.svg);
+                left: 92px;
+                top: 64px;
+
+            }
+
+            &--3 {
+                content: url(../img/svg/Star\ 13.svg);
+                left: 216px;
+                top: -84px;
+            }
+
+            &--4 {
+                content: url(../img/svg/Star\ 16.svg);
+                left: 273px;
+                top: 557px;
+            }
+
+            &--5 {
+                content: url(../img/svg/Star\ 17.svg);
+                left: 304px;
+                top: 580px;
+            }
+        }
+    }
+
+    .scroll {
+        height: 51px;
+
+        &__content {
+            gap: 27px;
+        }
+
+        &__text {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 110%;
+        }
+
+        &__svg {
+            width: 19px;
+            height: 19px;
+        }
+
+    }
+
+    .about-games {
+        display: none;
+    }
+
+    .mini-games {
+        &__title {
+            padding-top: 48px;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 49px;
+        }
+
+        &__box {
+            margin-top: 47px;
+            padding-bottom: 49px;
+        }
+
+        &__content {
+            padding: 28px;
+        }
+
+        &__name {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 39px;
+        }
+
+        &__description {
+            margin-top: 16px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+
+        &__button {
+            margin-top: 30px;
+            width: 285px;
+            height: 55px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+
+    .footer {
+        height: 100px;
+
+        &__text {
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
 }

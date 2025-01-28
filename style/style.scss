@@ -72,7 +72,7 @@ a {
         top: 50%;
 
 
-        &--1::before {
+        &--1::after {
             content: url(../img/svg/Star\ 2.svg);
             position: absolute;
             bottom: 202px;
