@@ -7,6 +7,10 @@ a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
@@ -177,20 +181,20 @@ a {
 .about-games__svg--1::before {
   content: url(../img/svg/Star\ 1.svg);
   position: absolute;
-  bottom: 61px;
+  bottom: 40px;
   left: 257px;
 }
 .about-games__svg--2::after {
   position: absolute;
   content: url(../img/svg/Star\ 11.svg);
-  top: 20px;
-  right: 657px;
+  top: 41px;
+  right: 659px;
 }
 .about-games__svg--3::after {
   position: absolute;
   content: url(../img/svg/Star\ 12.svg);
-  top: 74px;
-  right: 619px;
+  top: 95px;
+  right: 620px;
 }
 .about-games__title {
   color: #fff;

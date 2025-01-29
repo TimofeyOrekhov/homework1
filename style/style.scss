@@ -9,6 +9,10 @@ a {
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
@@ -60,6 +64,7 @@ a {
         font-weight: 600;
         margin-top: 48px;
         transition: all 0.5s;
+
 
         &:hover {
             background-color: transparent;
@@ -206,22 +211,22 @@ a {
         &--1::before {
             content: url(../img/svg/Star\ 1.svg);
             position: absolute;
-            bottom: 61px;
+            bottom: 40px;
             left: 257px;
         }
 
         &--2::after {
             position: absolute;
             content: url(../img/svg/Star\ 11.svg);
-            top: 20px;
-            right: 657px;
+            top: 41px;
+            right: 659px;
         }
 
         &--3::after {
             position: absolute;
             content: url(../img/svg/Star\ 12.svg);
-            top: 74px;
-            right: 619px;
+            top: 95px;
+            right: 620px;
         }
     }
 
