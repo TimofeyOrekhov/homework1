@@ -554,6 +554,9 @@ html {
     line-height: 20px;
     text-align: center;
   }
+  .header__text--bold {
+    font-weight: 600;
+  }
   .header__text br {
     display: none;
   }
