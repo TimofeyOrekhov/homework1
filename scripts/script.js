@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.querySelectorAll('.about-games__card').forEach((card) => {
     card.addEventListener('mouseenter', () => {
-        
+
         card.classList.add('increased');
 
         const relatedCardId = parseInt(card.id.split('-')[1], 10) + 3;
@@ -42,8 +42,44 @@ document.querySelectorAll('.about-games__card').forEach((card) => {
         const relatedCard = document.getElementById(`card-${relatedCardId}`);
 
         if (relatedCard) {
-            
+
             relatedCard.classList.remove('decreased');
         }
     });
 });
+
+
+//Используйте стандартные окна (alert, prompt) для взаимодействия с пользователем.
+//Код должен быть чистым: используйте понятные имена переменных и следуйте стандартам форматирования.
+
+//Угадай число 
+
+const guessNumberButton = document.getElementById('guessNumberButton');
+guessNumberButton.addEventListener('click', playGuessGame)
+
+function playGuessGame() {
+    let randomNumber = Math.floor(Math.random() * 100) + 1;
+    let userGuess;
+
+    do {
+        let game = prompt('Угадайте число от 1 до 100');
+
+        if (game === null) {
+            alert('Игра отменена.');
+            return;
+        }
+        userGuess = parseInt(game);
+
+        if (isNaN(userGuess)) {
+            alert('Введите корректное число.');
+            continue;
+        }
+        if (userGuess < randomNumber) {
+            alert('Загаданное число больше.');
+        } else if (userGuess > randomNumber) {
+            alert('Загаданное число меньше.');
+
+        }
+    } while (userGuess !== randomNumber);
+    alert('Вы угадали!');
+}

@@ -101,13 +101,4 @@ if (clientOS === 0) {
 
 
 
-let clientDeviceYear = 2014; 
-
-let message = "Установите " + 
-    (clientDeviceYear < 2015 ? "облегченную " : "") + 
-    "версию приложения для " + 
-    (clientOS === 0 ? "iOS" : "Android") + 
-    " по ссылке.";
-
-console.log(message);
 

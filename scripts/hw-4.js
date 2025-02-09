@@ -44,7 +44,7 @@ console.log(`Результат: ${n} Количество итераций: ${n
 
 // Задание 6 
 
-let fridayOfMonth = 4; 
+let fridayOfMonth = 4;
 
 for (let i = 1; i <= 31; i++) {
     if (i % 7 === fridayOfMonth) {
@@ -106,3 +106,5 @@ for (let i = 1; i < randomNum.length; i++) {
 }
 
 console.log(minNum);
+
+
