@@ -49,9 +49,6 @@ document.querySelectorAll('.about-games__card').forEach((card) => {
 });
 
 
-//Используйте стандартные окна (alert, prompt) для взаимодействия с пользователем.
-//Код должен быть чистым: используйте понятные имена переменных и следуйте стандартам форматирования.
-
 //Угадай число 
 
 const guessNumberButton = document.getElementById('guessNumberButton');
@@ -83,3 +80,8 @@ function playGuessGame() {
     } while (userGuess !== randomNumber);
     alert('Вы угадали!');
 }
+
+
+
+//Используйте стандартные окна (alert, prompt) для взаимодействия с пользователем.
+//Код должен быть чистым: используйте понятные имена переменных и следуйте стандартам форматирования.
