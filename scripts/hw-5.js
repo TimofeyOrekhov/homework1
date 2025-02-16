@@ -1,19 +1,20 @@
 // Задание 1
+let num1 = +prompt('Введите первое число');
+let num2 = +prompt('Введите второе число');
 
 function minNum(a, b) {
-    a = prompt('Введите первое число');
-    b = prompt('Введите второе число');
-
     return Math.min(a, b);
 }
+let result = minNum(num1, num2);
 
-alert(minNum());
+alert(`Минимальное число: ${result}`);
 
 
-//Задание 2
+// Задание 2
+let num3 = +prompt('Введите число');
 
 function checkEvenNum(num) {
-    num = prompt('Введите число');
+
 
     if (num % 2 === 0) {
         return 'Число четное';
@@ -22,38 +23,46 @@ function checkEvenNum(num) {
     }
 }
 
-alert(checkEvenNum());
+let resultCheck = checkEvenNum(num3);
+
+alert(resultCheck);
 
 
 // Задание 3
-
+let num4 = +prompt('Введите число');
 
 function squareNum(num) {
-    num = prompt('Введите число');
     console.log(num ** 2);
 }
 
-squareNum();
+squareNum(num4);
 
-
+let num5 = +prompt('Введите число');
 function returnSquareNum(num) {
-    num = prompt('Введите число');
     return num ** 2;
 }
 
-let result = returnSquareNum();
+let result2 = returnSquareNum(num5);
 
-console.log(result);
+console.log(result2);
 
 // Задание 4
 
+let ageUser = +prompt('Сколько вам лет?');
 
-function greetUser() {
-    let age = prompt('Сколько вам лет?');
+function greetUser(age) {
+
+    if (isNaN(age)) {
+        alert('Ошибка: Введите число');
+        return;
+    }
+
+
     if (age < 0) {
         alert('Вы ввели неправильное значение');
         return;
     }
+
     if (age <= 12) {
         alert('Привет, друг!');
     } else {
@@ -62,7 +71,7 @@ function greetUser() {
     console.log(age);
 }
 
-greetUser();
+greetUser(ageUser);
 
 // Задание 5
 
@@ -83,16 +92,18 @@ alert(multiplyNumbers(input1, input2));
 
 // Задание 6
 
+let num6 = prompt('Введите число');
+
 
 function cubeNumber(num) {
-    num = prompt('Введите число');
+
     if (isNaN(num)) {
         return 'Переданный параметр не является числом';
     }
     return `n в кубе ровняется ${num ** 3}`;
 }
 
-alert(cubeNumber());
+alert(cubeNumber(num6));
 
 // Задание 7
 
@@ -101,11 +112,11 @@ alert(cubeNumber());
 function Circle(radius) {
     this.radius = radius;
 
-    this.getArea = function() {
+    this.getArea = function () {
         return Math.PI * this.radius ** 2;
     };
 
-    this.getPerimeter = function() {
+    this.getPerimeter = function () {
         return 2 * Math.PI * this.radius;
     };
 }
