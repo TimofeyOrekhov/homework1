@@ -155,14 +155,6 @@ html {
   flex-shrink: 0;
 }
 
-@keyframes scroll {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
 .about-games {
   position: relative;
   background: rgb(32, 32, 39);
