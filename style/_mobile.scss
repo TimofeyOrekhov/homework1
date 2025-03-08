@@ -103,41 +103,117 @@
     }
 
     .mini-games {
+        position: relative;
+        background: rgb(32, 32, 39);
+        padding-top: 46px;
+        overflow: hidden;
+
+        &__svg {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+
+            &--1::before {
+                content: url(../img/svg/Star\ 7.svg);
+                position: absolute;
+                bottom: 1617px;
+                left: 559px;
+            }
+
+            &--2::after {
+                position: absolute;
+                content: url(../img/svg/Star\ 6.svg);
+                bottom: 1549px;
+                left: 603px;
+            }
+
+            &--3::after {
+                position: absolute;
+                content: url(../img/svg/Star\ 8.svg);
+                top: 1616px;
+                left: 599px;
+            }
+
+            &--4::after {
+                position: absolute;
+                content: url(../img/svg/Star\ 10.svg);
+                top: 1663px;
+                left: 529px;
+            }
+        }
+
         &__title {
-            padding-top: 48px;
-            font-size: 40px;
+
+            color: rgb(255, 255, 255);
+            font-family: Montserrat;
+            font-size: 64px;
             font-weight: 700;
-            line-height: 49px;
+            line-height: 78px;
         }
 
         &__box {
-            margin-top: 47px;
-            padding-bottom: 49px;
+            display: flex;
+            gap: 32px;
+            margin-top: 72px;
+            flex-direction: column;
+            padding-bottom: 144px;
+
+            &>.mini-games__card:nth-child(2n) {
+                flex-direction: row-reverse;
+                justify-content: flex-end;
+            }
+        }
+
+        &__card {
+            display: flex;
+            justify-content: space-between;
+            height: 500px;
+            background-color: #fff;
+            border-radius: 30px;
+            box-shadow: 0 13px 42px -8px rgba(0, 0, 0, 0.13);
+            overflow: hidden;
         }
 
         &__content {
-            padding: 28px;
+            padding: 48px;
+            background-color: #fff;
         }
 
         &__name {
-            font-size: 32px;
+            color: rgb(32, 32, 39);
+            font-family: Montserrat;
+            font-size: 48px;
             font-weight: 700;
-            line-height: 39px;
+            line-height: 59px;
         }
 
         &__description {
-            margin-top: 16px;
-            font-size: 16px;
+            margin-top: 24px;
+            color: rgb(32, 32, 39);
+            font-family: Montserrat;
+            font-size: 24px;
             font-weight: 400;
-            line-height: 20px;
+            line-height: 32px;
         }
 
         &__button {
-            margin-top: 30px;
-            width: 100%;
-            height: 55px;
-            font-size: 16px;
+            border-radius: 60px;
+            margin-top: 36px;
+            background: rgb(32, 32, 39);
+            width: 247px;
+            height: 66px;
+            color: rgb(255, 255, 255);
+            font-family: Montserrat;
+            font-size: 24px;
             font-weight: 600;
+            cursor: pointer;
+            transition: all 0.5s;
+
+            &:hover {
+                background-color: transparent;
+                color: #000000;
+            }
         }
     }
 
