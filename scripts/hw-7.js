@@ -29,8 +29,8 @@ function filterStringsStartingWith(words, prefix) {
 }
 
 //проверка
-console.log(filterStringsStartingWith(stringsArray, "а"));
-console.log(filterStringsStartingWith(stringsArray, "к"));
-console.log(filterStringsStartingWith(stringsArray, "Л"));
+console.log(filterStringsStartingWith(words, "а")); //пустой массив
+console.log(filterStringsStartingWith(words, "к")); //массив начинается на "к"
+console.log(filterStringsStartingWith(words, "Л")); //массив начинается на "Л" верхний регистр
 
 // Задание 3
