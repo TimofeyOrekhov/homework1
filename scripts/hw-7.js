@@ -34,3 +34,9 @@ console.log(filterStringsStartingWith(words, "к")); //массив начина
 console.log(filterStringsStartingWith(words, "Л")); //массив начинается на "Л" верхний регистр
 
 // Задание 3
+
+let roundingNum = 32.58884;
+
+console.log(Math.floor(roundingNum));
+console.log(Math.ceil(roundingNum));
+console.log(Math.round(roundingNum));
