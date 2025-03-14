@@ -35,7 +35,9 @@ document.getElementById("add-paragraph").addEventListener("click", function () {
     document.body.appendChild(p);
 });
 // Задание 7
-document.getElementById("remove-new-paragraph").addEventListener("click", function () {
-    let firstNewParagraph = document.querySelector(".new-paragraph");
-    if (firstNewParagraph) firstNewParagraph.remove();
+document.getElementById("remove-description").addEventListener("click", function () {
+    let newParagraphs = document.querySelectorAll(".new-paragraph");
+    if (newParagraphs.length > 0) {
+        newParagraphs[newParagraphs.length - 1].remove();
+    }
 });
