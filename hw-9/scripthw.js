@@ -38,6 +38,6 @@ document.getElementById("add-paragraph").addEventListener("click", function () {
 document.getElementById("remove-description").addEventListener("click", function () {
     let newParagraphs = document.querySelectorAll(".new-paragraph");
     if (newParagraphs.length > 0) {
-        newParagraphs[newParagraphs.length - 1].remove();
+        newParagraphs[newParagraphs.length - 1].remove(); 
     }
 });

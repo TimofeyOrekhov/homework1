@@ -194,3 +194,11 @@ function playQuiz() {
 
     alert(`Викторина завершена!\nПравильных ответов: ${correctCount} из ${quiz.length}`);
 }
+
+
+// Генератор случайных цветов
+
+document.getElementById("randomColorGeneratorButton").addEventListener("click", function () {
+    let randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    document.querySelector('.mini-games').style.backgroundColor = randomColor;
+});
