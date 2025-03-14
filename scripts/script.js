@@ -48,3 +48,15 @@ document.querySelectorAll('.about-games__card').forEach((card) => {
     });
 });
 
+window.addEventListener('resize', function () {
+    const inputLink = document.querySelector('.header__input');
+    if (window.innerWidth <= 832) {
+        inputLink.setAttribute('href', '#miniGames');
+    } else {
+        inputLink.setAttribute('href', '#aboutGames');
+    }
+});
+
+if (window.innerWidth <= 832) {
+    document.querySelector('.header__input').setAttribute('href', '#miniGames');
+}
